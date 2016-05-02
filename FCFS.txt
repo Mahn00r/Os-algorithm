@@ -1,0 +1,20 @@
+arr= []
+w8t= []
+n = int(raw_input('Enter the total no of processes: '))
+for i in range(n):
+    arr.append([])
+    arr[i].append(input('Enter process: '))
+    arr[i].append(int(input('Enter arrival time: ')))
+    arr[i].append(int(input('Enter burst time: ')))
+for i in range(n):
+    wt= arr[i][2] - arr[i][1]
+    w8t.append(wt)
+print 'ProcessName\tArrivalTime\tBurstTime'
+for i in range(n):
+    print arr[i][0],'\t\t',arr[i][1],'\t\t',arr[i][2]
+
+w8 = sum(w8t)
+print 'Total waiting time: ',w8
+print 'Average waiting time: ',(w8/n)
+
+
