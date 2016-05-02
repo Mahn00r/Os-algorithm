@@ -1,0 +1,50 @@
+flag=0
+wait_time=0
+turnaround_time=0
+at[]
+bt[]
+rt[]
+
+n=int(input("Enter total no of processes :"))
+remain=n
+
+for count in range(n)
+	at[count].append(int(input("Enter arrival time")))
+	bt[count].append(int(input("Enter burst time")))
+	rt[count]=bt[count]
+
+time_quantum=int(input("Enter time quantum"))
+
+for time in range(count=0):
+	if (rt[count] <= time_quantum) and (rt[count] > 0)
+	time += rt[count]
+	rt[count]=0
+	flag=1
+
+	elif (rt[count]>0)
+	rt[count] -= time_quantum
+	time += time_quantum
+
+	if(rt[count] == 0) and (flag == 1)
+	remain--
+	
+	print("Process \t Turnaround \t waiting ")
+	print count+1 \t time-at[count] \t time-at[count]-bt[count]
+	wait_time += time-at[count]-bt[count]
+	turnaround_time += time-at[count]
+	flag=0
+
+	remain!=0
+
+if (count==n-1)
+	count=0
+elif (at[count] <=time)
+	count++
+else 
+	count=0
+
+print("Average waiting time", wait_time/n)
+print("Average turnaround time", turnaround_time/n)
+
+
+

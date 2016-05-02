@@ -1,0 +1,33 @@
+
+at=[]
+bt=[]
+wt=[]
+wtotal=0
+n=int(input("Enter total no of processes :"))
+for x in range(n):
+	at[x].append(int(input("enter process number:  ")))
+	bt[x].append(int(input("enter burst time: ")))
+j=1
+for i in range(n):
+	select=i
+	for j in range(n):
+		if(bt[j]<bt[select];
+			select=j
+		temp=bt[i]
+		bt[i]=bt[select]
+		bt[select]=temp
+		temp=arr[i]
+		at[i]=at[select]
+		at[select]=temp
+wt.append(0)
+j=0
+for i in range(n):
+	wt.append(0)
+	for j in range(i):
+		wt[i]=wt[i]+bt[i]
+	wtotal=wtotal+wt[i]
+print "process Number\t Arrival time\t Burst Time\t Waiting time"
+	print at[i] \t atime \t bt[i] \t,wt[i]
+print "total waiting time: ",wtotal
+print "total average time: " ,(wtotal/n) 
+

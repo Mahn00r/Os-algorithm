@@ -1,0 +1,32 @@
+at[]
+bt[]
+rt[]
+remain=0
+sum_wait=0
+sum_turnaround=0
+
+n=int(input("Enter total no of processes :"))
+
+for i in range(n):
+	at[i].append(int(input("Enter arrival time")))
+	bt[i].append(int(input("Enter burst time")))
+	rt[i]=bt[i]
+
+rt[n]=9999
+for time to range(remain != n):
+	smallest=9
+	for i to range(n):
+		if (at[i] <=time) and (rt[i] < rt[smallest]) and (rt[i] >0 )
+		smallest=i
+	rt[smallest]--
+	if(rt[smallest==0])
+	remain++
+	endtime=time+1
+	
+	print("Process \t Turnaround time \t waiting time)
+	print smallest+1,endtime-at[smallest],endtime-bt[smallest]-at[smallest]
+	sum_wait += endtime-bt[smallest]-at[smallest]
+	sum_turnaround += endtime-at[smallest]
+
+print("Average waiting time", wait_time/n)
+print("Average turnaround time", turnaround_time/n)
